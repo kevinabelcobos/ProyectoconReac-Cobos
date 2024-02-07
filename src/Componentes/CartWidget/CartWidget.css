@@ -1,0 +1,10 @@
+.imagen_del_carrito{
+    width: 50px;
+}
+
+.carrito{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    gap: 2rem;
+}

@@ -1,0 +1,12 @@
+.contenedorProductos{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.containerProducts{
+    max-width: 80%;
+    margin: 0 auto;
+}

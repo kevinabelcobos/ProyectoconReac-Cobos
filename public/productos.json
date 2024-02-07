@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nombre": "Hamburguesa",
+    "precio": 5500,
+    "stock": 15,
+    "description": "Hamburguesa doble con lechuga,tomate y cheddar",
+    "img": "/burguer1.png",
+    "categoria": {
+      "id": 1,
+      "nombre": "Hamburguesa"
+    }
+  },
+  {
+    "id": 2,
+    "nombre": "Papas fritas",
+    "precio": 4800,
+    "stock": 10,
+    "description": "Una mixta mejor que tu ex",
+    "img": "/papasFritas.png",
+    "categoria": {
+      "id": 2,
+      "nombre": "Papas_Fritas"
+    }
+  },
+  {
+    "id": 3,
+    "nombre": "Vino",
+    "precio": 3990,
+    "stock": 17,
+    "description": "Mas frio que el corazón de tu ex",
+    "img": "/vino.jpg",
+    "categoria": {
+      "id": 3,
+      "nombre": "Bebidas"
+    }
+  }
+]
