@@ -1,6 +1,36 @@
 .contador{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 2rem;
+}
+
+.buttonSumRest{
+    width: 100%;
+    padding: 0.3rem;
+    background-color:cornflowerblue;
+    border: none;
+    color: white;
+}
+
+.buttonSumRest:hover{
+    background-color: chartreuse;
+}
+
+
+.addToCart{
+    width: 100%;
+}
+
+.botonAddCart{
+    width: 100%;
+    padding: 0.3rem;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+.botonAddCart:hover{
+    background-color: chartreuse;
 }

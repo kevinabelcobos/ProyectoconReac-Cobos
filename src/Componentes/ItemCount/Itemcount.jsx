@@ -3,7 +3,12 @@ import {useState} from 'react'
 import "./ItemCount.css"
 import PropTypes from "prop-types"
 
-const Itemcount = ({stock}) => {
+const Itemcount = ({stock,agregarAlCarritoCount}) => {
+
+const agregarAlCarrito = () =>{
+    agregarAlCarritoCount(contador)
+    reset()
+}
 
 const [contador,setContador] = useState(1);
 
@@ -19,25 +24,26 @@ const sumar = () => {
     }
 }
 
-const AgregarCarrito = () =>{
+const reset = () =>{
     setContador(1)
-}
+} 
     return (
     <div>
         <div className='contador'>
-        <button onClick={restar}>-</button>
+        <button className='buttonSumRest' onClick={restar}>-</button>
         <p>{contador}</p>
-        <button onClick={sumar}>+</button>
+        <button className='buttonSumRest' onClick={sumar}>+</button>
         </div>
         <div className='addToCart'>
-        <button onClick={AgregarCarrito}>Agregar al Carrito</button>
+        <button className='botonAddCart' onClick={agregarAlCarrito}>Agregar al Carrito</button>
         </div>
     </div>
   )
 }
 
 Itemcount.propTypes = {
-    stock: PropTypes.number.isRequired
+    stock: PropTypes.number.isRequired,
+    agregarAlCarritoCount: PropTypes.func.isRequired
 }
 
 

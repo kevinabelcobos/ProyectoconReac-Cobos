@@ -1,0 +1,17 @@
+.cartItem{
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.imgCart{
+    max-width: 30%;
+}
+
+.itemCartProducto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

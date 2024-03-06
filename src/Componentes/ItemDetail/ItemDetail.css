@@ -1,0 +1,17 @@
+.card-img-categoria{
+    width: 20%;
+}
+
+.itemDetail{
+    width: 90%;
+}
+
+@media (min-width: 1200px) {
+    .itemDetail{
+        width: 20%;
+    }
+}
+
+.imgDetail{
+    width: 100%;
+}

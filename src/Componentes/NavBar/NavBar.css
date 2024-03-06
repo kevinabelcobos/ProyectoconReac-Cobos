@@ -31,9 +31,13 @@
 }
 
 .enlaceNavbar:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .containerNavbar{
     background-color: crimson;
+}
+
+.navbarPrincipal a.active{
+    text-decoration:underline;
 }

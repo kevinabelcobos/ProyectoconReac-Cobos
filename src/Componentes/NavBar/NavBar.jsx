@@ -1,25 +1,27 @@
 import "./NavBar.css"
 import CardWidget from "../CartWidget/CartWidget"
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 function NavBar() {
   return (
     <>
       <div className="containerNavbar">
-        <navbar className="navbarPrincipal">
-          <img className="imagenQueGaucho" src="/public/img/Que_Gaucho-removebg-preview.png" alt="Imagen de que gaucho" />
-          <a className="enlaceNavbar" href="/">Inicio</a>
-          <NavLink to={"/categoria/Hamburguesa"}>
+        <div className="navbarPrincipal">
+          <img className="imagenQueGaucho" src="/img/Que_Gaucho-removebg-preview.png" alt="Imagen de que gaucho" />
+          <NavLink to={"/"} className="enlaceNavbar">Inicio</NavLink>
+          <NavLink className="enlaceNavbar" to={"/categoria/Hamburguesa"}>
             <p>Hamburguesa</p>
           </NavLink>
-          <NavLink to={"/categoria/Papas_Fritas"}>
+          <NavLink className="enlaceNavbar" to={"/categoria/Papas_Fritas"}>
             <p>Papas</p>
           </NavLink>
-          <NavLink to={"/categoria/Bebidas"}>
+          <NavLink className="enlaceNavbar" to={"/categoria/Bebidas"}>
             <p>Bebidas</p>
           </NavLink>
+          <Link to={"/cart"}>
           <CardWidget />
-        </navbar>
+          </Link>
+        </div>
       </div>
     </>
   );
